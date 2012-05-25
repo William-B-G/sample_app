@@ -1,19 +1,17 @@
 	
-<h1>My Sample App</h1>
-<p>
-	This is the home page for the 
-	<a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-	sample application.
-</p>
-<p>Find me in app/views/static_pages/home.html.erb</p>
-<p>To view me on Heroku:
-<a href="http://radiant-spring-5275.herokuapp.com/static_pages/home/">http://radiant-spring-5275.herokuapp.com/static_pages/home/</a>
-</p>
-<div>This is a div</div>
-<div>This is another div</div>
-<h2>This is h2</h2>
-<h3>This is h3</h3>
+<div class="center hero-unit">
+	<h1>Welcome to the Sample App</h1>
 
+	<h2>
+		This is the home page for the
+		<a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+		sample application.
+	</h2>
+
+	<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
 
 
 
