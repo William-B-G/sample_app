@@ -27,14 +27,14 @@ describe "Static pages" do
   describe "Help page" do
 
     it "should have the h1 'Help'" do
-      # visit help_path
-      visit '/static_pages/help'
+      visit help_path
+      # visit '/static_pages/help'
       page.should have_selector('h1', text: 'Help')
     end
 
     it "should have the title 'Help'" do
-      # visit help_path
-      visit '/static_pages/help'
+      visit help_path
+      # visit '/static_pages/help'
       page.should have_selector('title',
       text: "Ruby on Rails Tutorial Sample App | Help")
     end
@@ -48,8 +48,8 @@ describe "Static pages" do
     end
 
     it "should have the title 'About Us'" do
-      # visit about_path
-      visit '/static_pages/about'
+      visit about_path
+      # visit '/static_pages/about'
       page.should have_selector('title',
       text: "Ruby on Rails Tutorial Sample App | About Us")
     end
@@ -58,14 +58,14 @@ describe "Static pages" do
   describe "Contact page" do
 
     it "should have the h1 'Contact'" do
-      # visit contact_path
-      visit '/static_pages/contact'
+      visit contact_path
+      # visit '/static_pages/contact'
       page.should have_selector('h1', text: 'Contact')
     end
 
     it "should have the title 'Contact'" do
-      # visit contact_path
-      visit '/static_pages/contact'
+      visit contact_path
+      # visit '/static_pages/contact'
       page.should have_selector('title',
       text: "Ruby on Rails Tutorial Sample App | Contact")
     end
